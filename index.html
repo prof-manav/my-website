@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Home — Muktinath Vishwakarma</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Personal website of Muktinath Vishwakarma — AI researcher. Portfolio, publications, invited talks, and more." />
-  <title>Muktinath Vishwakarma — Researcher</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Home — summaries of latest research, invited talks, and misc updates by Muktinath Vishwakarma.">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" class="brand">
+      <a href="index.html" class="brand">
         <div class="avatar" aria-hidden="true">MV</div>
         <div class="brand-text">
           <span class="name">Muktinath Vishwakarma</span>
@@ -21,37 +21,33 @@
         </div>
       </a>
       <nav class="nav">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#research" class="nav-link">Research</a>
-        <a href="#talks" class="nav-link">Invited Talk</a>
-        <a href="#misc" class="nav-link">Misc</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="talks.html" class="nav-link">Invited Talk</a>
+        <a href="misc.html" class="nav-link">Misc</a>
       </nav>
     </div>
   </header>
-
   <main id="home">
-    <!-- HERO -->
     <section class="section hero">
       <div class="container grid two-col">
         <div class="col">
           <h1>Hello, I'm <span class="accent">Muktinath Vishwakarma</span></h1>
           <p class="lead">
-            I’m a researcher working at the intersection of <strong>time series forecasting</strong>, 
-            <strong>generative AI</strong>, and <strong>graph learning</strong>. 
-            My recent work explores <em>multi‑step forecasting</em> for commodity prices (especially aluminium), 
-            integrating <em>Fourier, Transformer, LSTM</em> components and <em>physics‑informed constraints</em>.
+            Researcher focusing on <strong>multi-step time series forecasting</strong>, <strong>generative AI</strong>,
+            and <strong>graph learning</strong>. This homepage surfaces quick summaries of my latest work and updates.
           </p>
           <div class="cta-row">
-            <a class="btn primary" href="#research">See my research</a>
+            <a class="btn primary" href="research.html">Explore Research</a>
             <a class="btn" href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
         <div class="col">
           <div class="card hero-card">
             <ul class="quickfacts">
-              <li><span>Interests:</span> Multi‑step forecasting, TFT, KAN, PINNs, GNNs, RAG</li>
-              <li><span>Methods:</span> PyTorch, Darts, Optuna, VAR/ARIMA baselines</li>
+              <li><span>Interests:</span> MSF, TFT, KAN, PINNs, GNNs, RAG</li>
+              <li><span>Methods:</span> PyTorch, Darts, Optuna, VAR/ARIMA</li>
               <li><span>Keywords:</span> Aluminium, commodities, anomaly detection</li>
               <li><span>Location:</span> India</li>
             </ul>
@@ -60,142 +56,88 @@
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
+    <!-- Summaries: Research -->
+    <section class="section alt">
       <div class="container">
-        <h2>Education</h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="content">
-              <h3>Ph.D. in Computer Science (Ongoing)</h3>
-              <p class="muted">Focus: Time Series Forecasting, Generative AI</p>
-              <p class="desc">Working on multi‑step forecasting frameworks that fuse Fourier, LSTM, and Transformer blocks with physics‑informed constraints for robust commodity price prediction.</p>
-            </div>
-            <span class="year">20XX–Present</span>
-          </article>
-          <article class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="content">
-              <h3>M.Tech / M.S. in Computer Science</h3>
-              <p class="muted">Specialization: Machine Learning</p>
-              <p class="desc">Thesis on deep sequence models for financial time series. Coursework included DL, NLP, and Advanced Algorithms.</p>
-            </div>
-            <span class="year">20XX</span>
-          </article>
-          <article class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="content">
-              <h3>B.Tech in Computer Science</h3>
-              <p class="muted">Undergraduate Research: Forecasting & Data Mining</p>
-              <p class="desc">Built early forecasting pipelines and dashboards for metal prices and macro‑economic indicators.</p>
-            </div>
-            <span class="year">20XX</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESEARCH -->
-    <section id="research" class="section alt">
-      <div class="container">
-        <h2>Research</h2>
-
+        <h2>Latest in Research</h2>
         <div class="card-list">
           <article class="card">
-            <h3>MSF‑Transformer: A Multi‑Scale Fusion Transformer for Multi‑Step Forecasting of Aluminium Prices</h3>
+            <h3><a href="research.html#msf-transformer">MSF-Transformer: Multi-Scale Fusion for Aluminium</a></h3>
             <p class="muted">Preprint (draft) · 20XX</p>
-            <p>Proposes a multi‑scale fusion backbone that blends frequency‑domain priors with hierarchical temporal encoders to improve horizon‑wise stability and reduce error accumulation.</p>
-            <ul class="tags"><li>Transformer</li><li>Fourier</li><li>Time Series</li></ul>
+            <p>Frequency-domain priors + hierarchical temporal encoding improve long-horizon stability. Direct MIMO heads compared against TFT and VAR.</p>
           </article>
-
           <article class="card">
-            <h3>FANformer: A Unified Fourier and LSTM‑based Framework for Long‑Range Forecasting</h3>
+            <h3><a href="research.html#fanformer">FANformer: Fourier + LSTM for Long-Range Forecasting</a></h3>
             <p class="muted">Working paper · 20XX</p>
-            <p>Combines learnable frequency filters with LSTM temporal blocks and direct multi‑output heads; benchmarks vs. VAR/ARIMA, TFT, and Darts baselines.</p>
-            <ul class="tags"><li>LSTM</li><li>Fourier</li><li>Direct MIMO</li></ul>
+            <p>Learnable frequency filters fused with stacked LSTM and direct multi-output heads. Benchmarked on aluminium and multimetal panels.</p>
           </article>
-
           <article class="card">
-            <h3>Physics‑Informed Forecasting with Mean‑Reversion Constraints</h3>
+            <h3><a href="research.html#pinn-ou">Physics-Informed Mean-Reversion</a></h3>
             <p class="muted">In preparation · 20XX</p>
-            <p>Injects Ornstein–Uhlenbeck priors into deep sequence models to regularize long‑horizon drift, improving stability on aluminium price series.</p>
-            <ul class="tags"><li>PINN</li><li>OU Process</li><li>Stability</li></ul>
+            <p>OU-based regularization curbs drift in long horizons for commodity price series.</p>
           </article>
         </div>
-
-        <h3 class="subtle">Selected Topics I Work On</h3>
-        <div class="chips">
-          <span class="chip">Temporal Fusion Transformer</span>
-          <span class="chip">KANs</span>
-          <span class="chip">GNNs with Residuals</span>
-          <span class="chip">Anomaly Detection</span>
-          <span class="chip">RAG for Legal Docs</span>
-        </div>
+        <div class="more-link"><a class="btn" href="research.html">View all research</a></div>
       </div>
     </section>
 
-    <!-- INVITED TALKS -->
-    <section id="talks" class="section">
+    <!-- Summaries: Invited Talks -->
+    <section class="section">
       <div class="container">
-        <h2>Invited Talks</h2>
+        <h2>Recent Invited Talks</h2>
         <div class="card-list">
           <article class="card">
-            <h3>Generative AI for Faculty Development</h3>
-            <p class="muted">FDP Session · IIT/Institute, India · 20XX</p>
-            <p>Introduced transformer tooling, Hugging Face workflows, and responsible AI considerations for classroom and research use.</p>
+            <h3><a href="talks.html#fdp-genai">Generative AI for Faculty Development</a></h3>
+            <p class="muted">FDP Session · 20XX</p>
+            <p>Transformers, Hugging Face workflows, prompt safety, and evaluation in classrooms.</p>
           </article>
           <article class="card">
-            <h3>Temporal Models for Commodity Markets</h3>
-            <p class="muted">Seminar · University/Industry Lab · 20XX</p>
-            <p>Covered direct multi‑step strategies, error‑horizon trade‑offs, and practical benchmarking with Optuna.</p>
+            <h3><a href="talks.html#temporal-commodity">Temporal Models for Commodity Markets</a></h3>
+            <p class="muted">Seminar · 20XX</p>
+            <p>Direct multi-step strategies, error-horizon trade-offs, and practical benchmarking.</p>
           </article>
           <article class="card">
-            <h3>RAG Systems for Legal Document Retrieval</h3>
-            <p class="muted">Workshop · Tech Meetup · 20XX</p>
-            <p>Demonstrated ANN indexing (Annoy/FAISS), recall@K optimization, and citation‑aware re‑ranking.</p>
+            <h3><a href="talks.html#rag-legal">RAG Systems for Legal Document Retrieval</a></h3>
+            <p class="muted">Workshop · 20XX</p>
+            <p>ANN indexing (Annoy/FAISS), recall@K optimization, and citation-aware re-ranking.</p>
           </article>
         </div>
+        <div class="more-link"><a class="btn" href="talks.html">View all talks</a></div>
       </div>
     </section>
 
-    <!-- MISC -->
-    <section id="misc" class="section alt">
+    <!-- Summaries: Misc -->
+    <section class="section alt">
       <div class="container">
-        <h2>Misc</h2>
-        <div class="grid two-col">
-          <div class="col">
-            <div class="card">
-              <h3>Open‑source & Repos</h3>
-              <ul class="list">
-                <li><a href="#" aria-disabled="true">ts‑aluminium‑bench (private/dummy)</a></li>
-                <li><a href="#" aria-disabled="true">fanformer‑pytorch (private/dummy)</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <h3>Contact</h3>
-              <p>Best way to reach me is via <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>.</p>
-              <p class="muted">This site uses placeholder content. Replace with your details.</p>
-            </div>
-          </div>
+        <h2>From the Misc Desk</h2>
+        <div class="card-list">
+          <article class="card">
+            <h3><a href="misc.html#open-source">Open-source & Repos</a></h3>
+            <p class="muted">Updates · 20XX</p>
+            <p>Tracking internal scaffolds for aluminium time series benchmarks and FANformer experiments.</p>
+          </article>
+          <article class="card">
+            <h3><a href="misc.html#reading-notes">Reading Notes: TFT & KAN</a></h3>
+            <p class="muted">Notes · 20XX</p>
+            <p>Concise notes on Temporal Fusion Transformer internals and KAN operators for interpretable nonlinearity.</p>
+          </article>
+          <article class="card">
+            <h3><a href="misc.html#contact">Contact</a></h3>
+            <p class="muted">Info</p>
+            <p>Reach me on LinkedIn for collaboration and speaking opportunities.</p>
+          </article>
         </div>
+        <div class="more-link"><a class="btn" href="misc.html">See more</a></div>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>© <span id="year"></span> Muktinath Vishwakarma</span>
       <span class="sep">·</span>
       <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
-
-  <script>
-    // Update footer year without any framework
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
